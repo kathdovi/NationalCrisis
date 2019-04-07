@@ -56,8 +56,8 @@ def preprocess(data):
                     state_deaths_2013[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[0] += row.n_killed
-                            suicides_2013[i] += row.n_killed
+                            suicide_deaths[0] += 1
+                            suicides_2013[i] += 1
                     except:
                         continue
                 elif "2014" in row.date:
@@ -65,8 +65,8 @@ def preprocess(data):
                     state_deaths_2014[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[1] += row.n_killed
-                            suicides_2014[i] += row.n_killed
+                            suicide_deaths[1] += 1
+                            suicides_2014[i] += 1
                     except: 
                         continue
                 elif "2015" in row.date:
@@ -74,8 +74,8 @@ def preprocess(data):
                     state_deaths_2015[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[2] += row.n_killed
-                            suicides_2015[i] += row.n_killed
+                            suicide_deaths[2] += 1
+                            suicides_2015[i] += 1
                     except:
                         continue
                 elif "2016" in row.date:
@@ -83,8 +83,8 @@ def preprocess(data):
                     state_deaths_2016[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[3] += row.n_killed
-                            suicides_2016[i] += row.n_killed
+                            suicide_deaths[3] += 1
+                            suicides_2016[i] += 1
                     except:
                         continue
                 elif "2017" in row.date:
@@ -92,8 +92,8 @@ def preprocess(data):
                     state_deaths_2017[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[4] += row.n_killed
-                            suicides_2017[i] += row.n_killed
+                            suicide_deaths[4] += 1
+                            suicides_2017[i] += 1
                     except:
                         continue
                 elif "2018" in row.date:
@@ -101,8 +101,8 @@ def preprocess(data):
                     state_deaths_2018[i] += row.n_killed
                     try:
                         if "suicide" in row.incident_characteristics:
-                            suicide_deaths[5] += row.n_killed
-                            suicides_2018[i] += row.n_killed
+                            suicide_deaths[5] += 1
+                            suicides_2018[i] += 1
                     except:
                         continue
 
@@ -114,17 +114,18 @@ print(state_deaths_2014)
 print(suicides_2014)
 
 
-# myFile = open('processed.csv', 'w')
-# with myFile:
-#    writer = csv.writer(myFile)
-#    writer.writerow(['state', 'code', 'injured', 'killed', 'incidents', 'death_rate',
-#                     'n_registered', 'registration_rate', 'background_checks', 'background_rate', 'trump'])
-#    for i in range(50):
-#        death_rate = (state_deaths[i] / state_populations[i]) * 100000
-#        registration_rate = (
-#            state_registered[i] / state_populations[i]) * 100000
-#        background_rate = (state_backgrounds[i] / state_populations[i]) * 100000
-#        row = [states[i], state_codes[i], state_injured[i], state_deaths[i], state_incidents[i], death_rate,
-#               state_registered[i], registration_rate, state_backgrounds[i], background_rate, state_votes[i]]
-#        print(row)
-#        writer.writerow(row)
+myFile = open('processedyr.csv', 'w')
+with myFile:
+   writer = csv.writer(myFile)
+   writer.writerow(['state', 'code', '2013', '2014', '2015', '2016', '2017', '2018', '2013rt', '2014rt', '2015rt', '2016rt', '2017rt', '2018rt'])
+   for i in range(50):
+       rt13 = (suicides_2013[i] / state_populations[i]) * 100000
+       rt14 = (suicides_2014[i] / state_populations[i]) * 100000
+       rt15 = (suicides_2015[i] / state_populations[i]) * 100000
+       rt16 = (suicides_2016[i] / state_populations[i]) * 100000
+       rt17 = (suicides_2017[i] / state_populations[i]) * 100000
+       rt18 = (suicides_2018[i] / state_populations[i]) * 100000
+       row = [states[i], state_codes[i], state_deaths_2013[i], state_deaths_2014[i], state_deaths_2015[i], state_deaths_2016[i], state_deaths_2017[i],
+                state_deaths_2018[i], rt13, rt14, rt15, rt16, rt17, rt18]
+       print(row)
+       writer.writerow(row)

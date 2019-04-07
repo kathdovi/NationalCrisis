@@ -18,6 +18,7 @@ state_populations = [4887871, 737438, 7171646,
                      3013825, 39557045, 5695564, 3572665, 967171, 21299325, 10519475, 1420491, 1754208, 12741080, 6691878, 3156145, 2911505, 4468402, 4659978, 1338404, 6042718, 6902149, 9995915, 5611179, 2986530, 6126452, 1062305, 1929268, 3034392, 1356458, 8908520, 2095428, 19542209, 10383620, 760077, 11689442, 3943079, 
                      4190713, 12807060, 1057315, 5084127, 882235, 6770010, 28701845, 3161105, 626299, 8517685, 7535591, 1805832, 5813568, 577737]
 state_backgrounds = [474294, 78761, 377838, 248439, 1297132, 524770, 177690, 47723, 1203145, 549532, 14088, 207320, 2831447, 896148, 189159, 172047, 4912441, 307192, 93360, 151470, 211295, 489957, 604078, 247278, 469184, 117607, 74477, 127434, 120889, 93124, 156853, 358614, 529916, 62334, 717475, 332291, 359682, 1021943, 25030, 280749, 90693, 694101, 1571632, 295858, 41550, 476760, 627301, 241678, 452520, 60150]
+state_votes = [62.1, 51.3, 48.1, 60.6, 31.5, 43.3, 40.9, 41.7, 48.6, 50.4, 30.0, 59.2, 38.4, 56.5, 51.1, 56.2, 62.5, 58.1, 44.9, 33.9, 32.8, 47.3, 44.9, 57.9, 56.4, 55.6, 58.7, 45.5, 46.5, 41.0, 40.0, 36.5, 49.8, 63.0, 51.3, 65.3, 39.1, 48.2, 38.9, 54.9, 61.5, 60.7, 52.2, 45.1, 30.3, 44.4, 36.8, 67.9, 47.2, 68.2]
 state_deaths = [0] * 50
 state_injured = [0] * 50
 state_incidents = [0] * 50
@@ -86,11 +87,11 @@ print(state_registered)
 myFile = open('processed.csv', 'w')
 with myFile:
    writer = csv.writer(myFile)
-   writer.writerow(['state', 'code', 'injured', 'killed', 'incidents', 'death_rate', 'n_registered', 'registration_rate', 'background_checks', 'background_rate'])
+   writer.writerow(['state', 'code', 'injured', 'killed', 'incidents', 'death_rate', 'n_registered', 'registration_rate', 'background_checks', 'background_rate', 'trump'])
    for i in range(50):
        death_rate = ( state_deaths[i] / state_populations[i] ) * 100000
        registration_rate = ( state_registered[i] / state_populations[i] ) * 100000
        background_rate = ( state_backgrounds[i] / state_populations[i] ) * 100000
-       row = [states[i], state_codes[i], state_injured[i], state_deaths[i], state_incidents[i], death_rate, state_registered[i], registration_rate, state_backgrounds[i], background_rate]
+       row = [states[i], state_codes[i], state_injured[i], state_deaths[i], state_incidents[i], death_rate, state_registered[i], registration_rate, state_backgrounds[i], background_rate, state_votes[i]]
        print(row)
        writer.writerow(row)

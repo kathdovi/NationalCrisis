@@ -14,7 +14,7 @@ scl = [[0.0, 'rgb(253,224,221)'], [0.1, 'rgb(250,159,181)'],
        [1.0, 'rgb(197,27,138)']]
 
 df['text'] = df['state'] + '<br>' +\
-    'Number of Registered Firearms per 100,000 people: '+df['registration_rate']
+    'Number of NFA Registered Firearms per 100,000 people: '+df['registration_rate']
 
 data = [dict(
     type='choropleth',
@@ -30,11 +30,11 @@ data = [dict(
             width=2
         )),
     colorbar=dict(
-        title="Registered Firearms Rate per 100,000")
+        title="NFA Registered Firearms Rate per 100,000")
 )]
 
 layout = dict(
-    title='Number of Registered Firearms per 100,000 people',
+    title='Number of NFA Registered Firearms per 100,000 people',
     geo=dict(
         scope='usa',
         projection=dict(type='albers usa'),

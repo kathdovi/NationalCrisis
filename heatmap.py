@@ -10,11 +10,11 @@ df = pd.read_csv('processed.csv')
 for col in df.columns:
     df[col] = df[col].astype(str)
 
-scl = [[0.0, 'rgb(252,230,229)'], [0.2, 'rgb(249,206,204)'], [0.4, 'rgb(244,157,153)'],
-            [0.6, 'rgb(239,108,102)'],[0.8, 'rgb(234,59,51)'],[1.0, 'rgb(299,10,0)']]
+scl = [[0.0, 'rgb(253,224,221)'], [0.5, 'rgb(250,159,181)'],
+       [1.0, 'rgb(197,27,138)']]
 
 df['text'] = df['state'] + '<br>' +\
-    'Number of Gun Violence Deaths per 10,000 people: '+df['death_rate']
+    'Number of Gun Violence Deaths per 100,000 people: '+df['death_rate']
 
 data = [ dict(
         type='choropleth',
@@ -30,11 +30,11 @@ data = [ dict(
                 width = 2
             ) ),
         colorbar = dict(
-            title = "Gun Violence Death Rate per 10,000")
+            title = "Gun Violence Death Rate per 100,000")
         ) ]
 
 layout = dict(
-    title='Number of Gun Violence Deaths per 10,000 people',
+    title='Number of Gun Violence Deaths per 100,000 people',
         geo = dict(
             scope='usa',
             projection=dict( type='albers usa' ),

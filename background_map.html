@@ -1,4 +1,49 @@
-<html><head><meta charset="utf-8" /></head><body><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
+<html><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="index.html">Home</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Suicide Rates by Year
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./2013_map.html">2013</a>
+                       <a class="dropdown-item" href="./2014_map.html">2014</a>
+                       <a class="dropdown-item" href="./2015_map.html">2015</a>
+                       <a class="dropdown-item" href="./2016_map.html">2016</a>
+                       <a class="dropdown-item" href="./2017_map.html">2017</a>
+                       <a class="dropdown-item" href="./2018_map.html">2018</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Heat Maps
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./d3-cloropleth-map.html">Total Gun Violence Deaths</a>
+                       <a class="dropdown-item" href="./election_map.html">Percentage of Trump Voters</a>
+                       <a class="dropdown-item" href="./registered-map.html">NSF Registered Weapons</a>
+                       <a class="dropdown-item" href="./background_map.html">Background Checks</a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </nav><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
 * plotly.js v1.45.2
 * Copyright 2012-2019, Plotly, Inc.
 * All rights reserved.
@@ -8,4 +53,7 @@
 if (document.getElementById("7fa841b3-291a-4023-8494-a8aa4b5cf4a5")) {
     Plotly.newPlot("7fa841b3-291a-4023-8494-a8aa4b5cf4a5", [{"autocolorscale": false, "colorbar": {"title": {"text": "Background Check Rate per 100,000"}}, "colorscale": [[0.0, "rgb(253,224,221)"], [0.1, "rgb(250,159,181)"], [1.0, "rgb(197,27,138)"]], "locationmode": "USA-states", "locations": ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "text": ["Alabama<br>Number of Firearm Background Checks per 100,000 people: 9703.48849222903", "Alaska<br>Number of Firearm Background Checks per 100,000 people: 10680.355501072632", "Arizona<br>Number of Firearm Background Checks per 100,000 people: 5268.497636386403", "Arkansas<br>Number of Firearm Background Checks per 100,000 people: 8243.312070209784", "California<br>Number of Firearm Background Checks per 100,000 people: 3279.1428176700256", "Colorado<br>Number of Firearm Background Checks per 100,000 people: 9213.661719892885", "Connecticut<br>Number of Firearm Background Checks per 100,000 people: 4973.59814032382", "Delaware<br>Number of Firearm Background Checks per 100,000 people: 4934.28773195226", "Florida<br>Number of Firearm Background Checks per 100,000 people: 5648.747084708083", "Georgia<br>Number of Firearm Background Checks per 100,000 people: 5223.9489138003555", "Hawaii<br>Number of Firearm Background Checks per 100,000 people: 991.7697472212072", "Idaho<br>Number of Firearm Background Checks per 100,000 people: 11818.438862438206", "Illinois<br>Number of Firearm Background Checks per 100,000 people: 22222.97481846123", "Indiana<br>Number of Firearm Background Checks per 100,000 people: 13391.577072983098", "Iowa<br>Number of Firearm Background Checks per 100,000 people: 5993.355818569806", "Kansas<br>Number of Firearm Background Checks per 100,000 people: 5909.21190243534", "Kentucky<br>Number of Firearm Background Checks per 100,000 people: 109937.31092233867", "Louisiana<br>Number of Firearm Background Checks per 100,000 people: 6592.134125955103", "Maine<br>Number of Firearm Background Checks per 100,000 people: 6975.472278923255", "Maryland<br>Number of Firearm Background Checks per 100,000 people: 2506.6534628953395", "Massachusetts<br>Number of Firearm Background Checks per 100,000 people: 3061.292939343964", "Michigan<br>Number of Firearm Background Checks per 100,000 people: 4901.5722922813975", "Minnesota<br>Number of Firearm Background Checks per 100,000 people: 10765.616281355487", "Mississippi<br>Number of Firearm Background Checks per 100,000 people: 8279.776195116072", "Missouri<br>Number of Firearm Background Checks per 100,000 people: 7658.331445345528", "Montana<br>Number of Firearm Background Checks per 100,000 people: 11070.925958175854", "Nebraska<br>Number of Firearm Background Checks per 100,000 people: 3860.376059728353", "Nevada<br>Number of Firearm Background Checks per 100,000 people: 4199.655153322313", "New Hampshire<br>Number of Firearm Background Checks per 100,000 people: 8912.107857375606", "New Jersey<br>Number of Firearm Background Checks per 100,000 people: 1045.336374616659", "New Mexico<br>Number of Firearm Background Checks per 100,000 people: 7485.487451728239", "New York<br>Number of Firearm Background Checks per 100,000 people: 1835.0740185001605", "North Carolina<br>Number of Firearm Background Checks per 100,000 people: 5103.383983620356", "North Dakota<br>Number of Firearm Background Checks per 100,000 people: 8201.011213337595", "Ohio<br>Number of Firearm Background Checks per 100,000 people: 6137.80366932827", "Oklahoma<br>Number of Firearm Background Checks per 100,000 people: 8427.196107407435", "Oregon<br>Number of Firearm Background Checks per 100,000 people: 8582.83542681162", "Pennsylvania<br>Number of Firearm Background Checks per 100,000 people: 7979.5284788233985", "Rhode Island<br>Number of Firearm Background Checks per 100,000 people: 2367.317213886117", "South Carolina<br>Number of Firearm Background Checks per 100,000 people: 5522.068980574246", "South Dakota<br>Number of Firearm Background Checks per 100,000 people: 10279.91408184894", "Tennessee<br>Number of Firearm Background Checks per 100,000 people: 10252.584560436397", "Texas<br>Number of Firearm Background Checks per 100,000 people: 5475.717675989122", "Utah<br>Number of Firearm Background Checks per 100,000 people: 9359.322135772143", "Vermont<br>Number of Firearm Background Checks per 100,000 people: 6634.211454912111", "Virginia<br>Number of Firearm Background Checks per 100,000 people: 5597.295509284506", "Washington<br>Number of Firearm Background Checks per 100,000 people: 8324.509650271624", "West Virginia<br>Number of Firearm Background Checks per 100,000 people: 13383.194006972964", "Wisconsin<br>Number of Firearm Background Checks per 100,000 people: 7783.8601010601415", "Wyoming<br>Number of Firearm Background Checks per 100,000 people: 10411.311721423415"], "z": [9703.48849222903, 10680.355501072632, 5268.497636386403, 8243.312070209784, 3279.1428176700256, 9213.661719892885, 4973.59814032382, 4934.28773195226, 5648.747084708083, 5223.9489138003555, 991.7697472212072, 11818.438862438206, 22222.97481846123, 13391.577072983098, 5993.355818569806, 5909.21190243534, 109937.31092233867, 6592.134125955103, 6975.472278923255, 2506.6534628953395, 3061.292939343964, 4901.5722922813975, 10765.616281355487, 8279.776195116072, 7658.331445345528, 11070.925958175854, 3860.376059728353, 4199.655153322313, 8912.107857375606, 1045.336374616659, 7485.487451728239, 1835.0740185001605, 5103.383983620356, 8201.011213337595, 6137.80366932827, 8427.196107407435, 8582.83542681162, 7979.5284788233985, 2367.317213886117, 5522.068980574246, 10279.91408184894, 10252.584560436397, 5475.717675989122, 9359.322135772143, 6634.211454912111, 5597.295509284506, 8324.509650271624, 13383.194006972964, 7783.8601010601415, 10411.311721423415], "type": "choropleth", "uid": "e7fafbdc-f0a1-4c55-bbb0-e5ca6c64964d"}], {"geo": {"lakecolor": "rgb(255, 255, 255)", "projection": {"type": "albers usa"}, "scope": "usa", "showlakes": true}, "title": {"text": "Number of Background Checks per 100,000 people"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("7fa841b3-291a-4023-8494-a8aa4b5cf4a5")) {Plotly.Plots.resize(document.getElementById("7fa841b3-291a-4023-8494-a8aa4b5cf4a5"));};})</script></body></html>
+</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("7fa841b3-291a-4023-8494-a8aa4b5cf4a5")) {Plotly.Plots.resize(document.getElementById("7fa841b3-291a-4023-8494-a8aa4b5cf4a5"));};})</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>

@@ -1,4 +1,49 @@
-<html><head><meta charset="utf-8" /></head><body><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
+<html><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="index.html">Home</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Suicide Rates by Year
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./2013_map.html">2013</a>
+                       <a class="dropdown-item" href="./2014_map.html">2014</a>
+                       <a class="dropdown-item" href="./2015_map.html">2015</a>
+                       <a class="dropdown-item" href="./2016_map.html">2016</a>
+                       <a class="dropdown-item" href="./2017_map.html">2017</a>
+                       <a class="dropdown-item" href="./2018_map.html">2018</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Heat Maps
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./d3-cloropleth-map.html">Total Gun Violence Deaths</a>
+                       <a class="dropdown-item" href="./election_map.html">Percentage of Trump Voters</a>
+                       <a class="dropdown-item" href="./registered-map.html">NSF Registered Weapons</a>
+                       <a class="dropdown-item" href="./background_map.html">Background Checks</a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </nav><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
 * plotly.js v1.45.2
 * Copyright 2012-2019, Plotly, Inc.
 * All rights reserved.
@@ -8,4 +53,7 @@
 if (document.getElementById("5b85ed8c-740f-42a2-bf46-8db1bbea069f")) {
     Plotly.newPlot("5b85ed8c-740f-42a2-bf46-8db1bbea069f", [{"autocolorscale": false, "colorbar": {"title": {"text": "Suicide by gun rate"}}, "colorscale": [[0.0, "rgb(253,224,221)"], [0.5, "rgb(250,159,181)"], [1.0, "rgb(197,27,138)"]], "locationmode": "USA-states", "locations": ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "text": ["Alabama<br>Suicide by gun rate 9.288297502123115", "Alaska<br>Suicide by gun rate 11.255183486611754", "Arizona<br>Suicide by gun rate 3.4998938876793413", "Arkansas<br>Suicide by gun rate 5.906115982182111", "California<br>Suicide by gun rate 2.9451138223292457", "Colorado<br>Suicide by gun rate 3.4763896955595617", "Connecticut<br>Suicide by gun rate 2.0153023023429286", "Delaware<br>Suicide by gun rate 4.445956299351408", "Florida<br>Suicide by gun rate 4.09872143835544", "Georgia<br>Suicide by gun rate 4.914693936722127", "Hawaii<br>Suicide by gun rate 2.0415476057222466", "Idaho<br>Suicide by gun rate 1.8241850453309985", "Illinois<br>Suicide by gun rate 7.338467382670858", "Indiana<br>Suicide by gun rate 6.052112725306707", "Iowa<br>Suicide by gun rate 2.4396851221981253", "Kansas<br>Suicide by gun rate 4.155926230592082", "Kentucky<br>Suicide by gun rate 6.064807955953827", "Louisiana<br>Suicide by gun rate 10.643827073861724", "Maine<br>Suicide by gun rate 1.7931805344275715", "Maryland<br>Suicide by gun rate 6.569891231065227", "Massachusetts<br>Suicide by gun rate 1.7385889525131957", "Michigan<br>Suicide by gun rate 3.6915079810102425", "Minnesota<br>Suicide by gun rate 1.7465135223809471", "Mississippi<br>Suicide by gun rate 9.107559609312482", "Missouri<br>Suicide by gun rate 7.900167992828476", "Montana<br>Suicide by gun rate 2.8240477075792736", "Nebraska<br>Suicide by gun rate 3.0063215685949283", "Nevada<br>Suicide by gun rate 6.1956398514101005", "New Hampshire<br>Suicide by gun rate 1.9167567296591563", "New Jersey<br>Suicide by gun rate 3.2889862738142814", "New Mexico<br>Suicide by gun rate 4.820017676579678", "New York<br>Suicide by gun rate 2.0877885401798744", "North Carolina<br>Suicide by gun rate 5.2775428992971625", "North Dakota<br>Suicide by gun rate 2.3681811184919423", "Ohio<br>Suicide by gun rate 5.064399138983709", "Oklahoma<br>Suicide by gun rate 5.604757094646088", "Oregon<br>Suicide by gun rate 2.1237436207156155", "Pennsylvania<br>Suicide by gun rate 4.122726058908134", "Rhode Island<br>Suicide by gun rate 1.4186879028482524", "South Carolina<br>Suicide by gun rate 7.434904753559461", "South Dakota<br>Suicide by gun rate 3.060409074679649", "Tennessee<br>Suicide by gun rate 7.001466762973763", "Texas<br>Suicide by gun rate 4.104265771068027", "Utah<br>Suicide by gun rate 2.0562429909794204", "Vermont<br>Suicide by gun rate 2.3950221858888483", "Virginia<br>Suicide by gun rate 4.332163023168854", "Washington<br>Suicide by gun rate 2.255961078567029", "West Virginia<br>Suicide by gun rate 5.371485276592729", "Wisconsin<br>Suicide by gun rate 3.595038365423781", "Wyoming<br>Suicide by gun rate 2.5963370876367615"], "z": [9.288297502123115, 11.255183486611754, 3.4998938876793413, 5.906115982182111, 2.9451138223292457, 3.4763896955595617, 2.0153023023429286, 4.445956299351408, 4.09872143835544, 4.914693936722127, 2.0415476057222466, 1.8241850453309985, 7.338467382670858, 6.052112725306707, 2.4396851221981253, 4.155926230592082, 6.064807955953827, 10.643827073861724, 1.7931805344275715, 6.569891231065227, 1.7385889525131957, 3.6915079810102425, 1.7465135223809471, 9.107559609312482, 7.900167992828476, 2.8240477075792736, 3.0063215685949283, 6.1956398514101005, 1.9167567296591563, 3.2889862738142814, 4.820017676579678, 2.0877885401798744, 5.2775428992971625, 2.3681811184919423, 5.064399138983709, 5.604757094646088, 2.1237436207156155, 4.122726058908134, 1.4186879028482524, 7.434904753559461, 3.060409074679649, 7.001466762973763, 4.104265771068027, 2.0562429909794204, 2.3950221858888483, 4.332163023168854, 2.255961078567029, 5.371485276592729, 3.595038365423781, 2.5963370876367615], "type": "choropleth", "uid": "e06a11ed-29fe-4d9f-9008-1803ef574f1e"}], {"geo": {"lakecolor": "rgb(255, 255, 255)", "projection": {"type": "albers usa"}, "scope": "usa", "showlakes": true}, "title": {"text": "Suicide by gun rate 2016"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("5b85ed8c-740f-42a2-bf46-8db1bbea069f")) {Plotly.Plots.resize(document.getElementById("5b85ed8c-740f-42a2-bf46-8db1bbea069f"));};})</script></body></html>
+</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("5b85ed8c-740f-42a2-bf46-8db1bbea069f")) {Plotly.Plots.resize(document.getElementById("5b85ed8c-740f-42a2-bf46-8db1bbea069f"));};})</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>

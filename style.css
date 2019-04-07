@@ -1,0 +1,28 @@
+body {
+    background-image: url(./dark-grey-terrazzo.png);
+}
+
+.blurb {
+    background-color: white;
+    margin-top: 20%;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+a {
+    color: black;
+}
+
+#icons {
+    padding: 0px 5px 0px 5px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(250,159,181)
+}

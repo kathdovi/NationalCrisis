@@ -1,4 +1,49 @@
-<html><head><meta charset="utf-8" /></head><body><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
+<html><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="index.html">Home</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Suicide Rates by Year
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./2013_map.html">2013</a>
+                       <a class="dropdown-item" href="./2014_map.html">2014</a>
+                       <a class="dropdown-item" href="./2015_map.html">2015</a>
+                       <a class="dropdown-item" href="./2016_map.html">2016</a>
+                       <a class="dropdown-item" href="./2017_map.html">2017</a>
+                       <a class="dropdown-item" href="./2018_map.html">2018</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Heat Maps
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./d3-cloropleth-map.html">Total Gun Violence Deaths</a>
+                       <a class="dropdown-item" href="./election_map.html">Percentage of Trump Voters</a>
+                       <a class="dropdown-item" href="./registered-map.html">NSF Registered Weapons</a>
+                       <a class="dropdown-item" href="./background_map.html">Background Checks</a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </nav><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
 * plotly.js v1.45.2
 * Copyright 2012-2019, Plotly, Inc.
 * All rights reserved.
@@ -8,4 +53,7 @@
 if (document.getElementById("8cbbfe8f-9b75-4075-9059-e6712808ff62")) {
     Plotly.newPlot("8cbbfe8f-9b75-4075-9059-e6712808ff62", [{"autocolorscale": false, "colorbar": {"title": {"text": "NFA Registered Firearms Rate per 100,000"}}, "colorscale": [[0.0, "rgb(253,224,221)"], [0.1, "rgb(250,159,181)"], [1.0, "rgb(197,27,138)"]], "locationmode": "USA-states", "locations": ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "text": ["Alabama<br>Number of NFA Registered Firearms per 100,000 people: 3342.927830951349", "Alaska<br>Number of NFA Registered Firearms per 100,000 people: 2382.844388273997", "Arizona<br>Number of NFA Registered Firearms per 100,000 people: 2590.423453695288", "Arkansas<br>Number of NFA Registered Firearms per 100,000 people: 2788.6489759690758", "California<br>Number of NFA Registered Firearms per 100,000 people: 905.5858444431328", "Colorado<br>Number of NFA Registered Firearms per 100,000 people: 1758.5966903365493", "Connecticut<br>Number of NFA Registered Firearms per 100,000 people: 1911.654185321042", "Delaware<br>Number of NFA Registered Firearms per 100,000 people: 515.317353394591", "Florida<br>Number of NFA Registered Firearms per 100,000 people: 1770.9810052665991", "Georgia<br>Number of NFA Registered Firearms per 100,000 people: 1933.5185453646689", "Hawaii<br>Number of NFA Registered Firearms per 100,000 people: 564.4527138855508", "Idaho<br>Number of NFA Registered Firearms per 100,000 people: 2994.342746128167", "Illinois<br>Number of NFA Registered Firearms per 100,000 people: 1133.561676090253", "Indiana<br>Number of NFA Registered Firearms per 100,000 people: 1789.7815829876156", "Iowa<br>Number of NFA Registered Firearms per 100,000 people: 1000.8095318814568", "Kansas<br>Number of NFA Registered Firearms per 100,000 people: 1958.7120750264896", "Kentucky<br>Number of NFA Registered Firearms per 100,000 people: 1919.3214934556024", "Louisiana<br>Number of NFA Registered Firearms per 100,000 people: 2518.3809880647505", "Maine<br>Number of NFA Registered Firearms per 100,000 people: 1279.210163747269", "Maryland<br>Number of NFA Registered Firearms per 100,000 people: 1910.779222197693", "Massachusetts<br>Number of NFA Registered Firearms per 100,000 people: 579.9642980758601", "Michigan<br>Number of NFA Registered Firearms per 100,000 people: 717.0729242895725", "Minnesota<br>Number of NFA Registered Firearms per 100,000 people: 1550.8149000415062", "Mississippi<br>Number of NFA Registered Firearms per 100,000 people: 1316.9464227715778", "Missouri<br>Number of NFA Registered Firearms per 100,000 people: 1283.9405254460496", "Montana<br>Number of NFA Registered Firearms per 100,000 people: 1913.386456808544", "Nebraska<br>Number of NFA Registered Firearms per 100,000 people: 1300.5969103307575", "Nevada<br>Number of NFA Registered Firearms per 100,000 people: 2872.0086264398274", "New Hampshire<br>Number of NFA Registered Firearms per 100,000 people: 4359.884345847789", "New Jersey<br>Number of NFA Registered Firearms per 100,000 people: 669.347994953146", "New Mexico<br>Number of NFA Registered Firearms per 100,000 people: 4828.703252986978", "New York<br>Number of NFA Registered Firearms per 100,000 people: 399.8575596034205", "North Carolina<br>Number of NFA Registered Firearms per 100,000 people: 1590.6783953958254", "North Dakota<br>Number of NFA Registered Firearms per 100,000 people: 2031.3731371953104", "Ohio<br>Number of NFA Registered Firearms per 100,000 people: 1482.6627310354074", "Oklahoma<br>Number of NFA Registered Firearms per 100,000 people: 1892.3029439684065", "Oregon<br>Number of NFA Registered Firearms per 100,000 people: 1583.1673512359353", "Pennsylvania<br>Number of NFA Registered Firearms per 100,000 people: 2043.9117174433482", "Rhode Island<br>Number of NFA Registered Firearms per 100,000 people: 428.9166426277884", "South Carolina<br>Number of NFA Registered Firearms per 100,000 people: 1988.8566906373505", "South Dakota<br>Number of NFA Registered Firearms per 100,000 people: 2589.67281960022", "Tennessee<br>Number of NFA Registered Firearms per 100,000 people: 1589.864712164384", "Texas<br>Number of NFA Registered Firearms per 100,000 people: 2221.501788473877", "Utah<br>Number of NFA Registered Firearms per 100,000 people: 2656.0965232094472", "Vermont<br>Number of NFA Registered Firearms per 100,000 people: 1057.4821291427895", "Virginia<br>Number of NFA Registered Firearms per 100,000 people: 3850.9289789420477", "Washington<br>Number of NFA Registered Firearms per 100,000 people: 1347.3926597130867", "West Virginia<br>Number of NFA Registered Firearms per 100,000 people: 2095.377643103013", "Wisconsin<br>Number of NFA Registered Firearms per 100,000 people: 1259.9835419487656", "Wyoming<br>Number of NFA Registered Firearms per 100,000 people: 22169.77621305196"], "z": [3342.927830951349, 2382.844388273997, 2590.423453695288, 2788.6489759690758, 905.5858444431328, 1758.5966903365493, 1911.654185321042, 515.317353394591, 1770.9810052665991, 1933.5185453646689, 564.4527138855508, 2994.342746128167, 1133.561676090253, 1789.7815829876156, 1000.8095318814568, 1958.7120750264896, 1919.3214934556024, 2518.3809880647505, 1279.210163747269, 1910.779222197693, 579.9642980758601, 717.0729242895725, 1550.8149000415062, 1316.9464227715778, 1283.9405254460496, 1913.386456808544, 1300.5969103307575, 2872.0086264398274, 4359.884345847789, 669.347994953146, 4828.703252986978, 399.8575596034205, 1590.6783953958254, 2031.3731371953104, 1482.6627310354074, 1892.3029439684065, 1583.1673512359353, 2043.9117174433482, 428.9166426277884, 1988.8566906373505, 2589.67281960022, 1589.864712164384, 2221.501788473877, 2656.0965232094472, 1057.4821291427895, 3850.9289789420477, 1347.3926597130867, 2095.377643103013, 1259.9835419487656, 22169.77621305196], "type": "choropleth", "uid": "a94402c4-f79c-4702-aa45-3707f7bd796d"}], {"geo": {"lakecolor": "rgb(255, 255, 255)", "projection": {"type": "albers usa"}, "scope": "usa", "showlakes": true}, "title": {"text": "Number of NFA Registered Firearms per 100,000 people"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("8cbbfe8f-9b75-4075-9059-e6712808ff62")) {Plotly.Plots.resize(document.getElementById("8cbbfe8f-9b75-4075-9059-e6712808ff62"));};})</script></body></html>
+</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("8cbbfe8f-9b75-4075-9059-e6712808ff62")) {Plotly.Plots.resize(document.getElementById("8cbbfe8f-9b75-4075-9059-e6712808ff62"));};})</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>

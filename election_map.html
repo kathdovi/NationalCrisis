@@ -1,4 +1,49 @@
-<html><head><meta charset="utf-8" /></head><body><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
+<html><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="index.html">Home</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Suicide Rates by Year
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./2013_map.html">2013</a>
+                       <a class="dropdown-item" href="./2014_map.html">2014</a>
+                       <a class="dropdown-item" href="./2015_map.html">2015</a>
+                       <a class="dropdown-item" href="./2016_map.html">2016</a>
+                       <a class="dropdown-item" href="./2017_map.html">2017</a>
+                       <a class="dropdown-item" href="./2018_map.html">2018</a>
+                   </div>
+               </li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                       Heat Maps
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <a class="dropdown-item" href="./d3-cloropleth-map.html">Total Gun Violence Deaths</a>
+                       <a class="dropdown-item" href="./election_map.html">Percentage of Trump Voters</a>
+                       <a class="dropdown-item" href="./registered-map.html">NSF Registered Weapons</a>
+                       <a class="dropdown-item" href="./background_map.html">Background Checks</a>
+                   </div>
+               </li>
+           </ul>
+       </div>
+   </nav><script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script><script type="text/javascript">/**
 * plotly.js v1.45.2
 * Copyright 2012-2019, Plotly, Inc.
 * All rights reserved.
@@ -8,4 +53,7 @@
 if (document.getElementById("bb110d62-6581-4771-99d3-55ab6d90ff1b")) {
     Plotly.newPlot("bb110d62-6581-4771-99d3-55ab6d90ff1b", [{"autocolorscale": false, "colorbar": {"title": {"text": "Percentage of state voting for Trump"}}, "colorscale": [[0.0, "rgb(253,224,221)"], [0.5, "rgb(250,159,181)"], [1.0, "rgb(197,27,138)"]], "locationmode": "USA-states", "locations": ["AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"], "marker": {"line": {"color": "rgb(255,255,255)", "width": 2}}, "text": ["Alabama<br>Percentage of state voting for Trump 62.1", "Alaska<br>Percentage of state voting for Trump 51.3", "Arizona<br>Percentage of state voting for Trump 48.1", "Arkansas<br>Percentage of state voting for Trump 60.6", "California<br>Percentage of state voting for Trump 31.5", "Colorado<br>Percentage of state voting for Trump 43.3", "Connecticut<br>Percentage of state voting for Trump 40.9", "Delaware<br>Percentage of state voting for Trump 41.7", "Florida<br>Percentage of state voting for Trump 48.6", "Georgia<br>Percentage of state voting for Trump 50.4", "Hawaii<br>Percentage of state voting for Trump 30.0", "Idaho<br>Percentage of state voting for Trump 59.2", "Illinois<br>Percentage of state voting for Trump 38.4", "Indiana<br>Percentage of state voting for Trump 56.5", "Iowa<br>Percentage of state voting for Trump 51.1", "Kansas<br>Percentage of state voting for Trump 56.2", "Kentucky<br>Percentage of state voting for Trump 62.5", "Louisiana<br>Percentage of state voting for Trump 58.1", "Maine<br>Percentage of state voting for Trump 44.9", "Maryland<br>Percentage of state voting for Trump 33.9", "Massachusetts<br>Percentage of state voting for Trump 32.8", "Michigan<br>Percentage of state voting for Trump 47.3", "Minnesota<br>Percentage of state voting for Trump 44.9", "Mississippi<br>Percentage of state voting for Trump 57.9", "Missouri<br>Percentage of state voting for Trump 56.4", "Montana<br>Percentage of state voting for Trump 55.6", "Nebraska<br>Percentage of state voting for Trump 58.7", "Nevada<br>Percentage of state voting for Trump 45.5", "New Hampshire<br>Percentage of state voting for Trump 46.5", "New Jersey<br>Percentage of state voting for Trump 41.0", "New Mexico<br>Percentage of state voting for Trump 40.0", "New York<br>Percentage of state voting for Trump 36.5", "North Carolina<br>Percentage of state voting for Trump 49.8", "North Dakota<br>Percentage of state voting for Trump 63.0", "Ohio<br>Percentage of state voting for Trump 51.3", "Oklahoma<br>Percentage of state voting for Trump 65.3", "Oregon<br>Percentage of state voting for Trump 39.1", "Pennsylvania<br>Percentage of state voting for Trump 48.2", "Rhode Island<br>Percentage of state voting for Trump 38.9", "South Carolina<br>Percentage of state voting for Trump 54.9", "South Dakota<br>Percentage of state voting for Trump 61.5", "Tennessee<br>Percentage of state voting for Trump 60.7", "Texas<br>Percentage of state voting for Trump 52.2", "Utah<br>Percentage of state voting for Trump 45.1", "Vermont<br>Percentage of state voting for Trump 30.3", "Virginia<br>Percentage of state voting for Trump 44.4", "Washington<br>Percentage of state voting for Trump 36.8", "West Virginia<br>Percentage of state voting for Trump 67.9", "Wisconsin<br>Percentage of state voting for Trump 47.2", "Wyoming<br>Percentage of state voting for Trump 68.2"], "z": [62.1, 51.3, 48.1, 60.6, 31.5, 43.3, 40.9, 41.7, 48.6, 50.4, 30.0, 59.2, 38.4, 56.5, 51.1, 56.2, 62.5, 58.1, 44.9, 33.9, 32.8, 47.3, 44.9, 57.9, 56.4, 55.6, 58.7, 45.5, 46.5, 41.0, 40.0, 36.5, 49.8, 63.0, 51.3, 65.3, 39.1, 48.2, 38.9, 54.9, 61.5, 60.7, 52.2, 45.1, 30.3, 44.4, 36.8, 67.9, 47.2, 68.2], "type": "choropleth", "uid": "6df11824-0f50-45c4-91d0-8c7886f51d97"}], {"geo": {"lakecolor": "rgb(255, 255, 255)", "projection": {"type": "albers usa"}, "scope": "usa", "showlakes": true}, "title": {"text": "Percentage of state voting for Trump"}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("bb110d62-6581-4771-99d3-55ab6d90ff1b")) {Plotly.Plots.resize(document.getElementById("bb110d62-6581-4771-99d3-55ab6d90ff1b"));};})</script></body></html>
+</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("bb110d62-6581-4771-99d3-55ab6d90ff1b")) {Plotly.Plots.resize(document.getElementById("bb110d62-6581-4771-99d3-55ab6d90ff1b"));};})</script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>
